@@ -1,5 +1,5 @@
 <template>
-  <div id="todo" class="">
+  <div id="todo" class="mx-auto max-w-screen-md flex flex-col gap-4">
     <h1 class="text-4xl m-7 font-bold">Zenith's ToDos Component</h1>
 
     <div class="flex justify-center mx-auto max-w-md">
