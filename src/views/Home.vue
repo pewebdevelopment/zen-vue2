@@ -1,5 +1,7 @@
 <template>
   <div class="home">
+    <Navbar />
+
     <!-- table -->
     <table>
       <tr>
@@ -57,10 +59,13 @@
 
 <script>
 import axios from "axios";
+import Navbar from "../components/navbar.vue";
 // @ is an alias to /src
 
 export default {
   name: "Home",
+
+  components: [Navbar],
 
   data() {
     return {

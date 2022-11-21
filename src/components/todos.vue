@@ -18,7 +18,7 @@
           <td>{{ todo.srNo }}</td>
           <td>{{ todo.name }}</td>
           <td>
-            <button class="edit" @click="editToDo">Edit</button>
+            <button class="edit" @click="editToDo(todo.name)">Edit</button>
             <button class="delete" @click="deleteToDo(todo.srNo)">
               Delete
             </button>
