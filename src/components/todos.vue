@@ -110,6 +110,8 @@
         </thead>
         <tbody>
           <tr
+            v-for="todo in ToDos"
+            :key="todo.srNo"
             class="
               bg-white
               border-b
@@ -129,31 +131,35 @@
                 dark:text-white
               "
             >
-              001"
+              {{ todo.srNo }}
             </th>
-            <td class="py-4 px-6">Walk the dog</td>
+            <td class="py-4 px-6">{{ todo.name }}</td>
 
             <td class="flex items-center py-4 px-6 space-x-3">
-              <a
-                href="#"
+              <button
+                id="edit"
                 class="
                   font-medium
                   text-blue-600
                   dark:text-blue-500
                   hover:underline
                 "
-                >Edit</a
+                @click="editToDo(todo.name)"
               >
-              <a
-                href="#"
+                Edit
+              </button>
+              <button
+                id="delete"
                 class="
                   font-medium
                   text-red-600
                   dark:text-red-500
                   hover:underline
                 "
-                >Remove</a
+                @click="deleteToDo(todo.srNo)"
               >
+                Delete
+              </button>
             </td>
             <td class="p-4 w-4">
               <div class="flex items-center">
@@ -172,35 +178,12 @@
                     focus:ring-2
                     dark:bg-gray-700 dark:border-gray-600
                   "
+                  @click="toggleToDo"
                 />
-                <label for="checkbox-table-search-1" class="sr-only"
-                  >checkbox</label
-                >
               </div>
             </td>
           </tr>
         </tbody>
-      </table>
-    </div>
-
-    <div class="table-container">
-      <table>
-        <tr>
-          <th>Sr Number</th>
-          <th>ToDo</th>
-          <th>Actions</th>
-        </tr>
-        <tr v-for="todo in ToDos" :key="todo.srNo">
-          <td>{{ todo.srNo }}</td>
-          <td>{{ todo.name }}</td>
-          <td>
-            <button class="edit" @click="editToDo(todo.name)">Edit</button>
-            <button class="delete" @click="deleteToDo(todo.srNo)">
-              Delete
-            </button>
-            <input type="checkbox" @click="toggleToDo" />
-          </td>
-        </tr>
       </table>
     </div>
   </div>
