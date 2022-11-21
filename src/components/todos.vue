@@ -1,10 +1,69 @@
 <template>
-  <div>
-    <h1>ToDo Component</h1>
-    <div class="container">
-      <label><h3>ToDo:</h3></label>
-      <input v-model="nameofToDo" type="text" />
-      <button @click="addtodo">Add Tods</button>
+  <div id="todo" class="">
+    <h1 class="text-4xl">ToDos Component</h1>
+
+    <div class="flex justify-center mx-auto max-w-md">
+      <div
+        class="
+          inline-flex
+          items-center
+          px-3
+          text-sm text-gray-900
+          bg-gray-200
+          rounded-l-md
+          border border-r-0 border-gray-300
+          dark:bg-gray-600 dark:text-gray-400 dark:border-gray-600
+        "
+      >
+        #
+      </div>
+      <input
+        v-model="nameofToDo"
+        type="text"
+        id="website-admin"
+        class="
+          rounded-none rounded-r-lg
+          bg-gray-50
+          border border-gray-300
+          text-gray-900
+          focus:ring-blue-500 focus:border-blue-500
+          block
+          flex-1
+          min-w-0
+          w-full
+          text-sm
+          p-2.5
+          dark:bg-gray-700
+          dark:border-gray-600
+          dark:placeholder-gray-400
+          dark:text-white
+          dark:focus:ring-blue-500
+          dark:focus:border-blue-500
+        "
+        placeholder="Add to dos"
+      />
+      <button
+        @click="addtodo"
+        type="button"
+        class="
+          text-white
+          bg-gray-800
+          hover:bg-gray-900
+          focus:outline-none focus:ring-4 focus:ring-gray-300
+          font-medium
+          rounded-lg
+          text-sm
+          px-5
+          py-2.5
+          mx-5
+          dark:bg-gray-800
+          dark:hover:bg-gray-700
+          dark:focus:ring-gray-700
+          dark:border-gray-700
+        "
+      >
+        Add ToDos
+      </button>
     </div>
 
     <div class="table-container">
@@ -68,13 +127,6 @@ export default {
 <style scoped>
 .h3 {
   display: inline-block;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
 }
 
 .table-container {
