@@ -1,9 +1,7 @@
 <template>
-  <div class="home">
-    <Navbar />
-
+  <div id="home" class="flex justify-center align-middle">
     <!-- table -->
-    <table>
+    <table class="table-auto">
       <tr>
         <th><h1>ID</h1></th>
         <th><h1>First Name</h1></th>
