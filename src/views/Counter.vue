@@ -1,8 +1,8 @@
 <template>
   <div>
     <counter />
-    <Navbar />
-    <Navbar2 />
+    <Navbar class="m-7" />
+    <Navbar2 class="m-7" />
   </div>
 </template>
 
