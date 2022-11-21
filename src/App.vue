@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div id="nav" class="bg-gray-700 text-white">
+    <div id="nav" class="bg-gray-700 text-white flex gap-2 justify-center">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
       <router-link to="/counter">Counter</router-link> |
@@ -26,7 +26,7 @@
     font-weight: bold;
 
     &.router-link-exact-active {
-      color: #6aedf9;
+      color: #5761f1;
     }
   }
 }
