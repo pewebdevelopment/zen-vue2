@@ -1,6 +1,6 @@
 <template>
   <div id="todo" class="">
-    <h1 class="text-4xl">ToDos Component</h1>
+    <h1 class="text-4xl m-7 font-bold">Zenith's ToDos Component</h1>
 
     <div class="flex justify-center mx-auto max-w-md">
       <div
